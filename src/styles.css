@@ -1,36 +1,67 @@
-.container-app {border: solid;
+.container-app {border: transparent ;
 max-width: 700px;
-border-color: aquamarine;
-margin:  0 auto;
-padding: 20px 20px 600px 20px;}
+border-radius: 12px;
+margin:  50px auto;
+padding: 20px 30px 600px 30px;
+background-color:  transparent;
+background-image:
+url(https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)
+;
+}
 
 h1 {text-align: center;
     font-family: 'Secular One', sans-serif;}
 
-h2 {text-align: center;
+h2 {  text-shadow: #dbda7a 2px 0 10px;
+    font-size: 25px;
+    font-family: "Concert One", cursive;
+    font-style: oblique;
+    text-align: center;
 padding: 10px;  }
 
 .col-7 { text-align: center;
+    margin: 0 auto;
     border: solid;
-    border-color: darkkhaki ;
-padding: 30px 0;} 
+    border-width: 2px;
+    border-color: teal ;
+    border-collapse: separate;
+} 
 
 .col-6 {text-decoration: wavy;}
-.card.today 
-{margin: 0 auto;
-display: block;}
+
+.card.today {display: block;
+margin: 20px auto;
+    font-family: 'Concert One', cursive;
+  ;}
     
     
 #search-bar { padding: 20px }
 
-.row.cards {border: darkseagreen solid;
-margin: 20px auto;
+.row.cards {box-shadow: 2px 3px 3px;
+    border-color: teal;
+    border-width: 2px ;
+margin: 40px auto;
 font-family: 'Concert One', cursive;}
 
-.card.days { width: 140px;
-margin: 20px 0px;}
+.card.days { text-align: center;
+     width: 140px;
+margin: 20px auto;
+display: block;}
+
 
 #currentButton {display: block;
 margin: 15px auto 0 auto;
-font-family: 'Secular One', sans-serif;}
+font-family: 'Secular One', sans-serif;
+color: #2f4f67;
+  background-color: #bbddf7;
+  font-weight: 500;
+  font-family: "Bebas Neue", cursive}
 
+.col-5 {display: block;
+    text-align: center;
+    ; margin: 0 auto
+    ; padding-right: 0}
+
+    .row.search {display: block;
+        margin: 0 auto;
+    padding: 20px }
