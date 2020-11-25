@@ -21,9 +21,9 @@ padding: 10px;  }
 
 .col-7 { text-align: center;
     margin: 0 auto;
-    border: solid;
+    border: outset;
     border-width: 2px;
-    border-color: teal ;
+    border-color: rgba(89, 138, 228, 0.418);
     border-collapse: separate;
 } 
 
@@ -38,12 +38,14 @@ margin: 20px auto;
 #search-bar { padding: 20px }
 
 .row.cards {box-shadow: 2px 3px 3px;
-    border-color: teal;
+    border-color: rgba(89, 138, 228, 0.418);
+    
     border-width: 2px ;
 margin: 40px auto;
 font-family: 'Concert One', cursive;}
 
-.card.days { text-align: center;
+.card.days { border: inset;
+    text-align: center;
      width: 140px;
 margin: 20px auto;
 display: block;
@@ -71,3 +73,7 @@ color: #2f4f67;
     #search-text-input  { 
        background-color: lightblue;
        color: mediumvioletred;}
+
+    #tokyo {  font-family: 'Secular One', sans-serif; }
+    #newyork {  font-family: 'Secular One', sans-serif;}
+    #paris {  font-family: 'Secular One', sans-serif;}
