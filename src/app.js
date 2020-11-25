@@ -68,6 +68,10 @@ function searchCity(city) {
     );
   }
   
+
+
+
+
   function CurrentPosition(position) {
     let apiBase = "https://api.openweathermap.org/data/2.5/weather";
     let apiUrl = `${apiBase}?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
@@ -84,10 +88,6 @@ function searchCity(city) {
   
 
 
-
-
-
-  
   
   function changeIcon(response) {
     let icon = `${response.data.weather[0].icon}`;
@@ -134,6 +134,8 @@ function searchCity(city) {
     }
   }
 
+  let tokyo = document.querySelector("#tokyo")
+  tokyo.addEventListener("click", searchCity("Tokyo"))
 
 
 

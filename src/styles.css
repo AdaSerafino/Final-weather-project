@@ -10,6 +10,7 @@ url(https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg?auto=comp
 }
 
 h1 {text-align: center;
+    padding: 20px;
     font-family: 'Secular One', sans-serif;}
 
 h2 {  text-shadow: #f3628d 2px 0 10px;
@@ -27,15 +28,19 @@ padding: 10px;  }
     border-collapse: separate;
 } 
 
-.col-6 {text-decoration: wavy;}
+.col-6 {text-decoration: wavy;
+text-align: center;
+}
 
 .card.today {display: block;
 margin: 20px auto;
     font-family: 'Concert One', cursive;
+ background-color:rgba(105, 105, 105, 0.341);
   ;}
     
     
-#search-bar { padding: 20px }
+#search-bar { padding: 20px;
+width: 300px }
 
 .row.cards {box-shadow: 2px 3px 3px;
     border-color: rgba(89, 138, 228, 0.418);
@@ -57,23 +62,35 @@ background-color: transparent;}
 margin: 15px auto 0 auto;
 font-family: 'Secular One', sans-serif;
 color: #2f4f67;
-  background-color: #bbddf7;
+  background-color:#ffcdcc;
   font-weight: 500;
-  font-family: "Bebas Neue", cursive}
+  font-family: 'Concert One', cursive;}
 
 .col-5 {display: block;
     text-align: center;
     ; margin: 0 auto
-    ; padding-right: 0}
+    ; padding-right: 0;}
 
     .row.search {display: block; 
         margin: 0 auto;
     padding: 20px }
 
-    #search-text-input  { 
+    #search-text-input  {
        background-color: lightblue;
        color: mediumvioletred;}
 
     #tokyo {  font-family: 'Secular One', sans-serif; }
     #newyork {  font-family: 'Secular One', sans-serif;}
     #paris {  font-family: 'Secular One', sans-serif;}
+
+    input {
+        color: dodgerblue;
+        border-radius: 8px;
+        border-color: #6592ce;
+      }
+      
+      #city {color: thistle;
+    font-size:35px}
+
+    #currentButton:hover {background-color: mistyrose;
+        color: darkgray;}
