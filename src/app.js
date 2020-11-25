@@ -78,8 +78,16 @@ function searchCity(city) {
     navigator.geolocation.getCurrentPosition(CurrentPosition);
   }
   
-  let locationButton = document.querySelector("#current");
+  let locationButton = document.querySelector("#currentButton");
   locationButton.addEventListener("click", locate);
+
+  
+
+
+
+
+
+  
   
   function changeIcon(response) {
     let icon = `${response.data.weather[0].icon}`;
@@ -125,11 +133,13 @@ function searchCity(city) {
       }
     }
   }
+
+
+
+
+
+
   searchCity("Rome");
-  
-
-
-
 
 
 

@@ -12,7 +12,7 @@ url(https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg?auto=comp
 h1 {text-align: center;
     font-family: 'Secular One', sans-serif;}
 
-h2 {  text-shadow: #dbda7a 2px 0 10px;
+h2 {  text-shadow: #f3628d 2px 0 10px;
     font-size: 25px;
     font-family: "Concert One", cursive;
     font-style: oblique;
@@ -46,7 +46,9 @@ font-family: 'Concert One', cursive;}
 .card.days { text-align: center;
      width: 140px;
 margin: 20px auto;
-display: block;}
+display: block;
+background-image: url(https://images.pexels.com/photos/2088203/pexels-photo-2088203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+background-color: transparent;}
 
 
 #currentButton {display: block;
@@ -65,3 +67,7 @@ color: #2f4f67;
     .row.search {display: block; 
         margin: 0 auto;
     padding: 20px }
+
+    #search-text-input  { 
+       background-color: lightblue;
+       color: mediumvioletred;}
