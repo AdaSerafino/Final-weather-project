@@ -21,15 +21,12 @@
    
 <div class="container">
    
-   
     <div class="container-app">
-       
-       
+    
         <h1>FORECAST</h1>
         <h2>DATE</h2>
         
-        
-        <div class="row ">
+         <div class="row ">
             <div class="col-7">
                 <div class="row search"> 
                     <form id ="search-bar" action="">
@@ -43,14 +40,14 @@
                 </div>
 
 
-                <div class="row">
+                <div class="row current">
                     <div class="col-6"><button id= "currentButton">current <i class="fas fa-map-marked-alt"></i></button></div>
                     <div class="col-6">
-                    <span id ="newyork"> NEW YORK </span>
+                    <button class="buttonMost" id ="madrid"> MADRID </button>
                      <br>
-                     <span> <a href="#" id="tokyo">   TOKYO </a> </span>
+                     <button  class="buttonMost" id=tokyo>   TOKYO  </button>
                 <br>
-                <span id= "paris"> PARIS </span>
+                <button class="buttonMost" id= "paris"> PARIS </button>
         </div>
                 </div>
             </div>
@@ -62,9 +59,7 @@
             <div class="col-5" style="padding-right: 0;">
                 <div class="card today">
                 <div class="card-body">
-<span id="iconNow">icon
-</span>        
-    <br>    
+<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" id="icon">       
 <span id="city"> ROME</span> 
 <br>
 <span id="temperature"> 21 C°</span> <i class="fas fa-temperature-high"></i> 
@@ -77,67 +72,27 @@
               href="#"
               id="f-link" > F </a>° 
               <br>
-              humidity: <span id="humidity">  </span>%
+              HUMIDITY: <span id="humidity">  </span>%
               <br />
-              wind: <span id="wind"> </span> m/s </span>
+              WIND: <span id="wind"> </span> m/s </span>
                 </div>
             </div>
             </div>   
 
 
-
-      
-            <div class="row cards">
-                <div class="col-3">
-                    <div class="card days">
-                        <div class="card-body">
-                          TOMORROW
-                          <br>
-                          icon
-                          <br>
-                        <span class= "nextTemp1">  20 c° </span>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-3">
-                    <div class="card days">
-                        <div class="card-body">
-                           <span id= "tplus1"> T +1 </span>
-                            <br>
-                            icon
-                            <br>
-                        <span class= "nextTemp2">    20 c° </span>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-3">
-                    <div class="card days">
-                        <div class="card-body">
-                            <span id= "tplus2">T +2 </span>
-                            <br>
-                            icon
-                            <br>
-                           <span class= "nextTemp3"> 20 c° </span>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-3">
-                    <div class="card days">
-                        <div class="card-body">
-                           <span id= "tplus3"> T +3</span>
-                            <br>
-                            icon
-                            <br>
-                          <span class= "nextTemp4">  20 c° </span>
-                        </div>
-                      </div>
-                </div>
-
-
-            </div>
+         <div class="row weather-forecast" id="forecast">
+             <div class="col-2">
+                 <h3>
+                12:00
+                 </h3>
+                 <img src="" alt="">
+                 <div class="weather-forecast-temperature">
+                 <strong> 21</strong> 10 </div>
+             </div>
+         </div>
         </div>
+         
 
-    </div>
     <div class="extra-container"></div>
 </div>
 <script src="src/app.js"></script>
