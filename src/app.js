@@ -117,6 +117,10 @@ temperatureElement.innerHTML = Math.round(celsiusTemperature);
     let apiBase = "https://api.openweathermap.org/data/2.5/weather";
     let apiUrl = `${apiBase}?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showWeather);
+
+    apiUrl =`https://api.openweathermap.org/data/2.5/forecast?lat=
+    ${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
   }
   
 let celsiusTemperature = null;
