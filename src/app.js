@@ -114,13 +114,14 @@ temperatureElement.innerHTML = Math.round(celsiusTemperature);
 
 
   function CurrentPosition(position) {
-    let apiBase = "https://api.openweathermap.org/data/2.5/weather";
-    let apiUrl = `${apiBase}?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(showWeather);
+   
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showWeather);}
 
-    apiFUrl =`https://api.openweathermap.org/data/2.5/forecast?lat=
-    ${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-    axios.get(apiFUrl).then(displayForecast);
+
+ function CurrentPositionFor(position) {
+    apiUrl =`https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
   }
   
 let celsiusTemperature = null;
@@ -131,7 +132,15 @@ let celsiusTemperature = null;
   
   let locationButton = document.querySelector("#currentButton");
   locationButton.addEventListener("click", locate);
+  locationButton.addEventListener("click", locateFor);
 
+  function locateFor(event) {
+    navigator.geolocation.getCurrentPosition(CurrentPositionFor);
+  }
+  
+  
+ 
+  
   
 let farLink =document.querySelector("#f-link");
 farLink.addEventListener("click", showFar);
@@ -175,7 +184,6 @@ axios.get(apiUrl).then(displayForecast);
 
 let paris = document.querySelector("#paris");
 paris.addEventListener("click", showParis);
-
 
 
 
